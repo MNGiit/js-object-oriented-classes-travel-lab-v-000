@@ -15,7 +15,7 @@ class Route {
   }
   
   blocksTravelled() {
-    if (this.startingLocation === "park") {
+    if (this.startingLocation === "Park") {
       return this.endingLocation.vertical - this.beginningLocation.vertical;
     } else {
       return this.beginningLocation.vertical - this.endingLocation.vertical;
