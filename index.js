@@ -26,7 +26,10 @@ class Route {
   
   blocksTravelled() {
     const x = this.endingLocation.horizontal - this.beginningLocation.horizontal;
-    
+    const y = this.endingLocation.vertical - this.beginningLocation.vertical;
+    if (isNaN(y)) {
+      return x;
+    }
   }
   
   //blocksTravelled() {
