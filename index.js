@@ -25,7 +25,9 @@ class Route {
   }
   
   blocksTravelled() {
-    const x = this.endingLocation.horizontal - this.beginningLocation.horizontal;
+    // horizontal is just a string
+    // const x = this.endingLocation.horizontal - this.beginningLocation.horizontal;
+    
     const y = this.endingLocation.vertical - this.beginningLocation.vertical;
     if (isNaN(y)) {
       return x;
@@ -35,7 +37,9 @@ class Route {
   }
   
   
-  
+      let horizontalDistance =
+      this.avenueToInteger( this.endingLocation.horizontal ) -
+      this.avenueToInteger( this.beginningLocation.horizontal );
   
   
   
