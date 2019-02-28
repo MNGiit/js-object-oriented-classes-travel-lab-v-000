@@ -27,22 +27,12 @@ class Route {
   blocksTravelled() {
     // horizontal is just a string
     // const x = this.endingLocation.horizontal - this.beginningLocation.horizontal;
-    
+    const x = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
     const y = this.endingLocation.vertical - this.beginningLocation.vertical;
-    if (isNaN(y)) {
-      return x;
-    } else {
-      return y;
-    }
+    return x + y;
   }
   
-  
-      let horizontalDistance =
-      this.avenueToInteger( this.endingLocation.horizontal ) -
-      this.avenueToInteger( this.beginningLocation.horizontal );
-  
-  
-  
+
   //blocksTravelled() {
   //  const horizontal = this.endingLocation.horizontal - this.beginningLocation.horizontal;
   //  const vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
