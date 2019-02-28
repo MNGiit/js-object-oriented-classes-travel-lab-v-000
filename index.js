@@ -32,6 +32,9 @@ class Route {
     return x + y;
   }
   
+  estimatedTime() {
+    
+  }
 
 }
 
