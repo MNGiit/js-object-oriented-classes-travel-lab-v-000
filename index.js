@@ -1,3 +1,13 @@
+let eastWest = [
+  '1st Avenue',
+  '2nd Avenue',
+  '3rd Avenue',
+  'Lexington Avenue',
+  'Park',
+  'Madison Avenue',
+  '5th Avenue'
+];
+
 class Driver {
   constructor(name, year) {
     this.name = name;
@@ -14,9 +24,11 @@ class Route {
     this.endingLocation = endingLocation;
   }
   
+
+  
   blocksTravelled() {
     const horizontal = this.endingLocation.horizontal - this.beginningLocation.horizontal;
-    const vertical = this.endLocation.vertical - this.beginningLocation.vertical;
+    const vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
     return horizontal + vertical;
   }
 }
