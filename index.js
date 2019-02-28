@@ -24,11 +24,13 @@ class Route {
     this.endingLocation = endingLocation;
   }
   
-
-  
   blocksTravelled() {
-    const horizontal = this.endingLocation.horizontal - this.beginningLocation.horizontal;
-    const vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
-    return horizontal + vertical;
+    return this.endingLocation.horizontal - this.beginningLocation.horizontal;
   }
+  
+  //blocksTravelled() {
+  //  const horizontal = this.endingLocation.horizontal - this.beginningLocation.horizontal;
+  //  const vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
+  //  return horizontal + vertical;
+  //}
 }
