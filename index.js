@@ -15,7 +15,12 @@ class Route {
   }
   
   blocksTravelled() {
-    return this.endingLocation.vertical - this.beginningLocation.vertical;
+    if (this.startingLocation === "park") {
+      return this.endingLocation.vertical - this.beginningLocation.vertical;
+    } else {
+      return this.beginningLocation.vertical - this.endingLocation.vertical;
+    }
+    
   }
 }
 
