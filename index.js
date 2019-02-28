@@ -13,14 +13,18 @@ class Route {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
+  
+  blocksTravelled() {
+    
+  }
 }
 
 
-blocksTravelled
-calculates the number of blocksTravelled ‣
-TypeError: route.blocksTravelled is not a function
-    at Context.<anonymous> (test/indexTest.js:35:20)let route = new Route(
-  { horizontal: 'Park', vertical: '34' },
-  { horizontal: 'Park', vertical: '45' }
-);
-expect(route.blocksTravelled()).to.equal(11);
+// blocksTravelled
+// calculates the number of blocksTravelled ‣
+// TypeError: route.blocksTravelled is not a function
+//     at Context.<anonymous> (test/indexTest.js:35:20)let route = new Route(
+//   { horizontal: 'Park', vertical: '34' },
+//   { horizontal: 'Park', vertical: '45' }
+// );
+// expect(route.blocksTravelled()).to.equal(11);
