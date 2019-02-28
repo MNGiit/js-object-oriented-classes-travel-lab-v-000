@@ -29,6 +29,8 @@ class Route {
     const y = this.endingLocation.vertical - this.beginningLocation.vertical;
     if (isNaN(y)) {
       return x;
+    } else {
+      return y;
     }
   }
   
