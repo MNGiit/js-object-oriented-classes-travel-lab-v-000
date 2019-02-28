@@ -6,7 +6,7 @@ let eastWest = [
   'Park',
   'Madison Avenue',
   '5th Avenue'
-];
+]; // use eastWest.indexOf(this...horionztal) to get block number
 
 class Driver {
   constructor(name, year) {
@@ -33,11 +33,6 @@ class Route {
   }
   
 
-  //blocksTravelled() {
-  //  const horizontal = this.endingLocation.horizontal - this.beginningLocation.horizontal;
-  //  const vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
-  //  return horizontal + vertical;
-  //}
 }
 
 
