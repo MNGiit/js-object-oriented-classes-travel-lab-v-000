@@ -25,7 +25,8 @@ class Route {
   }
   
   blocksTravelled() {
-    return this.endingLocation.horizontal - this.beginningLocation.horizontal;
+    const x = this.endingLocation.horizontal - this.beginningLocation.horizontal;
+    
   }
   
   //blocksTravelled() {
